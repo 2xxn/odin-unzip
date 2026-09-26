@@ -1,0 +1,47 @@
+# Odin build output
+*.exe
+*.exe.manifest
+*.pdb
+*.ilk
+*.lib
+*.exp
+*.obj
+*.o
+*.d
+*.bc
+
+# Odin build cache / scratch
+.odin_cache/
+build/
+dist/
+out/
+target/
+
+# Debug + optimized binaries side by side in a package dir
+*_debug.exe
+*_release.exe
+
+# Test artifacts
+*.test.exe
+test_out/
+*.tap
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ols (Odin language server) config - contains machine-specific absolute paths.
+# Commit a sanitized copy as ols.example.json if you want to document the setup.
+ols.json
+
+# Scratch / debug output
+data.txt
+*.log
+*.tmp
+
+# Local archives used for manual testing. Not part of the library.
+# Use `git add -f` if you ever want to commit a fixture.
+*.zip
